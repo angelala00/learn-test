@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Component Tests" verbose="2" annotations="JDK">
+    <test name="a-t1" preserve-order="true" >
+        <classes>
+            <class name="cn.jc.TestA" />
+            <class name="cn.jc.TestB" />
+        </classes>
+    </test>
+    <test name="a-t2" preserve-order="true" >
+        <classes>
+            <class name="cn.jc.TestC" />
+            <class name="cn.jc.TestD" />
+        </classes>
+    </test>
+</suite>
