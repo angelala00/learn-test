@@ -29,6 +29,7 @@ public class TestOKHttpClientBuilder {
                     @Override
                     public void onResponse(Call call, Response response) {
                         System.out.println("onResponse()");
+                        System.out.println(response.body().string());
                     }
                 });
     }
