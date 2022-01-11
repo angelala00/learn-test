@@ -94,7 +94,7 @@ public class LoginUtils {
             }
             MultipartBody formBody = builder.build();
 
-            Request request = new Request.Builder().post(formBody).url(url).build();
+            Request request = new Request.Builder().post(formBody).url(url).header("accept","application/json").header("Content-Type","application/json").build();
             Response response = OkHttpUtils.buildOKHttpClient().build().newCall(request).execute();
             resStr = response.body().string();
         } catch (Exception e) {
